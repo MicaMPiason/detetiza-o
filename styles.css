@@ -156,9 +156,6 @@ h1 { max-width: 700px; margin-bottom: 22px; font-size: clamp(3.25rem, 5.3vw, 4.5
 .footer-brand small { color: var(--muted); }
 .footer-inner > div { display: flex; gap: 26px; color: var(--muted); font-size: 14px; font-weight: 700; }
 .footer-inner > div a { min-height: 44px; display: inline-flex; align-items: center; }
-.whatsapp-float { position: fixed; z-index: 90; right: max(20px,env(safe-area-inset-right)); bottom: max(20px,env(safe-area-inset-bottom)); width: 52px; height: 52px; display: grid; place-items: center; color: var(--deep); background: var(--lime); border: 2px solid white; border-radius: 50%; box-shadow: 0 12px 28px rgba(0,0,0,.2); transition: transform 180ms ease; }
-.whatsapp-float:hover { transform: translateY(-3px); }
-.whatsapp-float svg { width: 27px; height: 27px; fill: currentColor; }
 
 @media (max-width: 900px) {
   .about-layout, .services-layout, .contact-layout { grid-template-columns: 1fr 1fr; gap: 52px; }
@@ -213,7 +210,6 @@ h1 { max-width: 700px; margin-bottom: 22px; font-size: clamp(3.25rem, 5.3vw, 4.5
   .contact-lead .button { width: 100%; }
   .footer-inner, .footer-inner > div { align-items: flex-start; flex-direction: column; }
   .footer-inner > div { gap: 10px; }
-  .whatsapp-float { right: max(14px,env(safe-area-inset-right)); bottom: max(14px,env(safe-area-inset-bottom)); width: 48px; height: 48px; }
 }
 
 @media (max-width: 760px) and (max-height: 700px) {
