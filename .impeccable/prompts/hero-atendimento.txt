@@ -1,0 +1,8 @@
+Use case: photorealistic-natural
+Asset type: wide landing page hero photography for a pest-control company
+Primary request: create an editorial, photorealistic scene of a pest-control professional working outdoors beside dense green residential landscaping.
+Subject: one anonymous technician in full white protective coveralls, clear face shield and teal gloves, holding a professional spray wand connected to a backpack tank; no face identity and no visible company branding.
+Composition/framing: landscape composition, technician occupying the right 45% of the frame, left 55% kept visually quiet with dark green foliage and natural negative space for overlaid website copy; waist-up to three-quarter view; realistic proportions.
+Lighting/mood: natural late-afternoon light filtered through leaves, credible documentary photography, calm and professional.
+Color palette: deep forest greens, off-white protective clothing, restrained warm sunlight.
+Constraints: clearly generic illustrative editorial imagery, not a portrait of a real employee; no logos, no text, no watermark, no insects in foreground, no exaggerated mist, no toxic hazard imagery, no neon colors, no cinematic sci-fi suit.

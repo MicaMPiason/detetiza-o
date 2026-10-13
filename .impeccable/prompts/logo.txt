@@ -1,0 +1,9 @@
+Use case: logo-brand
+Asset type: website logo asset
+Primary request: upscale and clean this exact existing logo for professional web use. Improve edge sharpness, antialiasing, symmetry, and overall resolution while preserving the original design faithfully.
+Input image: the provided logo.jpg is the edit target.
+Subject: the same four-panel shield containing the same white silhouettes of a rat, cockroach, mosquito, and ant.
+Style/medium: crisp, polished flat brand mark with clean vector-like edges.
+Color palette: preserve the same dark green border, bright orange panels, light green panels, and white pest silhouettes.
+Composition/framing: preserve the same centered shield, exact four-panel layout, proportions, icon positions, subtle shadow, and light neutral background.
+Constraints: do not redesign; do not add, remove, replace, or reinterpret any symbol; no text; no watermark; keep the visual identity unchanged; output a high-resolution PNG suitable as a source for WebP conversion.

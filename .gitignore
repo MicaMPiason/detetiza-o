@@ -1,0 +1,6 @@
+.vercel/
+.impeccable/review/
+.impeccable/edge-qa-profile/
+node_modules/
+.DS_Store
+Thumbs.db

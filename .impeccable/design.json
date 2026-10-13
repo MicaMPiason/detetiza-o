@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T16:36:00-03:00",
+  "title": "Design System: Telles Dedetizadora",
+  "extensions": {
+    "colorMeta": {
+      "protection-green": { "role": "primary", "displayName": "Verde Proteção", "canonical": "#003e2f", "tonalRamp": ["#001c15", "#003024", "#004534", "#195b49", "#427261", "#708c7e", "#a7b9b0", "#e9f0ed"] },
+      "deep-green": { "role": "primary", "displayName": "Verde Profundo", "canonical": "#002b21", "tonalRamp": ["#001913", "#002b21", "#004033", "#185747", "#426f61", "#748b80", "#a9b9b2", "#e9f0ed"] },
+      "action-lime": { "role": "primary", "displayName": "Verde Ação", "canonical": "#8cc63f", "tonalRamp": ["#21330e", "#365416", "#4d7620", "#66992b", "#80ba39", "#9ed25c", "#c5e59b", "#edf7df"] },
+      "action-lime-hover": { "role": "primary", "displayName": "Verde Ação Claro", "canonical": "#a6df55", "tonalRamp": ["#263a10", "#3f601a", "#598725", "#75ad32", "#92d044", "#abe260", "#c9eca0", "#eff9e1"] },
+      "signal-orange": { "role": "secondary", "displayName": "Laranja Sinal", "canonical": "#ff6b00", "tonalRamp": ["#3f1700", "#682700", "#913900", "#bb4b00", "#e85f00", "#ff8438", "#ffb885", "#fff0e5"] },
+      "natural-surface": { "role": "neutral", "displayName": "Superfície Natural", "canonical": "#f5f6f2", "tonalRamp": ["#242521", "#3c3d39", "#565752", "#71726d", "#8e8f89", "#acada7", "#d0d1cc", "#f5f6f2"] },
+      "paper-white": { "role": "neutral", "displayName": "Branco Papel", "canonical": "#ffffff", "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#b3b3b3", "#d9d9d9", "#ffffff"] },
+      "forest-text": { "role": "neutral", "displayName": "Texto Floresta", "canonical": "#173a2f", "tonalRamp": ["#101f1a", "#173a2f", "#2c5246", "#496c60", "#69867b", "#8da69c", "#b8cac3", "#edf3f0"] },
+      "leaf-muted": { "role": "neutral", "displayName": "Cinza Folha", "canonical": "#5b6c64", "tonalRamp": ["#18211d", "#2b3933", "#405149", "#5b6c64", "#75867e", "#96a49d", "#bdc6c1", "#eff2f0"] },
+      "soft-line": { "role": "neutral", "displayName": "Linha Suave", "canonical": "#dbe3dc", "tonalRamp": ["#202722", "#354139", "#4d5c52", "#68776d", "#84938a", "#a2afa7", "#c1cbc4", "#eef2ef"] },
+      "hero-copy": { "role": "neutral", "displayName": "Texto do Hero", "canonical": "#e2eee9", "tonalRamp": ["#1d2924", "#31443c", "#496158", "#637e72", "#809b8f", "#9fb8ad", "#bfd5cc", "#eef8f4"] },
+      "on-dark-muted": { "role": "neutral", "displayName": "Névoa sobre Verde", "canonical": "#d7e8e1", "tonalRamp": ["#1d2924", "#31443c", "#486057", "#617c70", "#7d998d", "#9bb6aa", "#bad3c8", "#eef7f3"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Título único e persuasivo do hero." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos das seções editoriais." },
+      "title": { "displayName": "Title", "purpose": "Nomes na lista técnica de serviços." },
+      "body": { "displayName": "Body", "purpose": "Explicações, depoimentos e dados de contato." },
+      "label": { "displayName": "Label", "purpose": "Navegação, ações, métricas e metadados." }
+    },
+    "shadows": [
+      { "name": "header-scrolled", "value": "0 8px 28px rgba(0,0,0,.08)", "purpose": "Separação do cabeçalho claro após rolagem." },
+      { "name": "service-strip", "value": "0 18px 40px rgba(0,0,0,.06)", "purpose": "Conexão suave da faixa de serviços ao hero no desktop." },
+      { "name": "brand-seal", "value": "0 22px 45px rgba(0,0,0,.14)", "purpose": "Sobreposição do selo na imagem da seção Sobre." },
+      { "name": "floating-whatsapp", "value": "0 12px 28px rgba(0,0,0,.2)", "purpose": "Legibilidade da ação fixa sobre qualquer seção." }
+    ],
+    "motion": [
+      { "name": "state-standard", "value": "180ms ease", "purpose": "Cor, deslocamento, visibilidade e ícones de navegação." },
+      { "name": "reduced-motion", "value": ".01ms", "purpose": "Neutralização de transições e animações quando movimento reduzido é preferido." }
+    ],
+    "breakpoints": [
+      { "name": "compact-columns", "value": "900px" },
+      { "name": "mobile-stack", "value": "760px" },
+      { "name": "short-mobile-height-with-mobile-width", "value": "700px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal de orçamento pelo WhatsApp.",
+      "html": "<a class=\"ds-button-primary\" href=\"#\">Pedir orçamento pelo WhatsApp <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-button-primary { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 12px 19px; color: #002b21; background: #8cc63f; border-radius: 7px; font: 800 16px/1.2 Inter, Arial, Helvetica, sans-serif; text-decoration: none; transition: transform 180ms ease, background-color 180ms ease; } .ds-button-primary:hover { background: #a6df55; transform: translateY(-2px); } .ds-button-primary:focus-visible { outline: 3px solid #ff6b00; outline-offset: 4px; } .ds-button-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Navigation CTA",
+      "kind": "button",
+      "refersTo": "nav-cta",
+      "description": "Ação compacta no cabeçalho sobreposto.",
+      "html": "<a class=\"ds-nav-cta\" href=\"#\">Pedir orçamento <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-nav-cta { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; padding: 0 18px; color: #002b21; background: #8cc63f; border-radius: 7px; font: 750 14px/1 Inter, Arial, Helvetica, sans-serif; text-decoration: none; transition: background-color 180ms ease; } .ds-nav-cta:hover { background: #a6df55; } .ds-nav-cta:focus-visible { outline: 3px solid #ff6b00; outline-offset: 4px; }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "description": "Navegação curta sobre verde profundo, com links de alto toque.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#servicos\">Serviços</a><a href=\"#sobre\">Sobre</a><a href=\"#avaliacoes\">Avaliações</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 29px; padding: 12px 20px; color: #fff; background: rgba(0,43,33,.82); font-family: Inter, Arial, Helvetica, sans-serif; } .ds-nav a { min-height: 44px; display: inline-flex; align-items: center; color: inherit; font-size: 14px; font-weight: 750; text-decoration: none; } .ds-nav a:hover { text-decoration: underline; text-underline-offset: .24em; } .ds-nav a:focus-visible { outline: 3px solid #ff6b00; outline-offset: 4px; }"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "description": "Item técnico aberto, separado por linhas em vez de cartão.",
+      "html": "<article class=\"ds-service-row\"><span class=\"ds-service-icon\" aria-hidden=\"true\">✓</span><div><h3>Controle de pragas</h3><p>Avaliação do ambiente e tratamento conforme a praga identificada.</p></div></article>",
+      "css": ".ds-service-row { display: grid; grid-template-columns: 74px 1fr; gap: 22px; padding: 34px 0; color: #173a2f; border-top: 1px solid #dbe3dc; font-family: Inter, Arial, Helvetica, sans-serif; } .ds-service-icon { width: 56px; height: 56px; display: grid; place-items: center; color: #002b21; background: #8cc63f; border-radius: 50%; font-weight: 800; } .ds-service-row h3 { margin: 1px 0 8px; font-size: 23px; line-height: 1.2; letter-spacing: -.015em; } .ds-service-row p { margin: 0; color: #5b6c64; line-height: 1.6; }"
+    },
+    {
+      "name": "Review Band Item",
+      "kind": "custom",
+      "description": "Depoimento integrado à faixa verde profunda, sem cartão próprio.",
+      "html": "<figure class=\"ds-review\"><blockquote>Serviço de qualidade, ótimos profissionais. Recomendo.</blockquote><figcaption>Jessica De carli</figcaption></figure>",
+      "css": ".ds-review { width: 320px; margin: 0; padding: 0 34px; color: #fff; background: #002b21; border-left: 1px solid rgba(255,255,255,.25); font-family: Inter, Arial, Helvetica, sans-serif; } .ds-review blockquote { min-height: 150px; margin: 0 0 28px; color: #e4efeb; font-size: 17px; line-height: 1.65; } .ds-review figcaption { color: #8cc63f; font-size: 14px; font-weight: 800; }"
+    },
+    {
+      "name": "Contact Detail",
+      "kind": "custom",
+      "description": "Bloco tipográfico aberto para endereço, telefone ou horário.",
+      "html": "<address class=\"ds-contact\"><div><span>Telefone</span><a href=\"tel:+5554996815609\">(54) 99681-5609</a></div></address>",
+      "css": ".ds-contact { display: grid; gap: 26px; padding-top: 26px; color: #173a2f; border-top: 1px solid #173a2f; font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; } .ds-contact div { display: grid; gap: 3px; } .ds-contact span { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; } .ds-contact a { min-height: 44px; display: inline-flex; align-items: center; justify-self: start; color: inherit; font-weight: 750; } .ds-contact a:hover { color: #003e2f; } .ds-contact a:focus-visible { outline: 3px solid #ff6b00; outline-offset: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Proteção Editorial em Campo",
+    "overview": "A Telles se apresenta como uma operação local, técnica e acessível. A direção visual usa a objetividade de um editorial de serviço: fotografia de atendimento em escala ampla, títulos firmes, informação organizada por linhas e blocos de cor institucionais, sem transformar o conteúdo em uma grade de cartões.\n\nO verde profundo cria autoridade e proteção; o verde-lima conduz ações e sinais úteis. A fotografia abre a narrativa no hero, enquanto a imagem de detalhe e o selo com a marca criam uma assimetria reconhecível na seção Sobre. O sistema é persuasivo, mas contido: a confiança vem da hierarquia, da prova social e dos fatos do produto.",
+    "keyCharacteristics": [
+      "Hero fotográfico com navegação sobreposta e gradiente direcional para legibilidade.",
+      "Ritmo editorial aberto, com divisórias finas no lugar de caixas repetidas.",
+      "Assimetria controlada na seção Sobre, combinando imagem vertical e selo da marca.",
+      "Serviços apresentados como lista técnica; avaliações apresentadas em uma faixa verde profunda.",
+      "Contato tipográfico e aberto, com a ação principal em verde-lima."
+    ],
+    "rules": [
+      { "name": "The Action Lime Rule", "body": "O verde-lima marca uma ação, um ícone ou uma prova; ele não vira fundo dominante de seção.", "section": "colors" },
+      { "name": "The Orange Focus Rule", "body": "O laranja pertence ao foco visível de 3px com afastamento de 4px; não é uma segunda cor promocional.", "section": "colors" },
+      { "name": "The One-Family Rule", "body": "Use somente a Inter local e seus fallbacks; contraste tipográfico deve vir de peso, tamanho e ritmo, não de uma fonte decorativa adicional.", "section": "typography" },
+      { "name": "The Open Editorial Rule", "body": "Seções densas se organizam por alinhamento, espaço e divisórias; não envolva cada item em um cartão.", "section": "layout" },
+      { "name": "The Structural Shadow Rule", "body": "Sombra só aparece quando explica sobreposição ou fixação; nunca transforme serviços ou avaliações em cartões elevados.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar a fotografia do hero como entrada persuasiva e manter o gradiente verde que assegura contraste do texto.",
+      "Do preservar o selo da marca sobre a imagem vertical na seção Sobre.",
+      "Do apresentar serviços e avaliações como listas abertas separadas por linhas.",
+      "Do reservar verde-lima para ação, prova e pequenos sinais de ênfase.",
+      "Do manter foco visível, alvos interativos de pelo menos 44px e suporte a movimento reduzido.",
+      "Do aplicar as adaptações de 900px, 760px e a regra adicional de altura máxima de 700px."
+    ],
+    "donts": [
+      "Don't reintroduzir órbitas, palco circular, composição abstrata do escudo ou hero sem fotografia.",
+      "Don't converter serviços ou avaliações em grades de cartões.",
+      "Don't inventar licenças, garantias, estatísticas, equipe ou credenciais que não constem no produto.",
+      "Don't usar o laranja como cor dominante ou reduzir o contraste do foco acessível.",
+      "Don't adicionar vidro, carrosséis, gradientes decorativos extras ou movimento elaborado."
+    ]
+  }
+}

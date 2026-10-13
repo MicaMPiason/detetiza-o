@@ -1,0 +1,8 @@
+Use case: photorealistic-natural
+Asset type: editorial detail image for the About section of a pest-control landing page
+Primary request: create a close editorial photograph of pest-control work focused on equipment and process, not on a person's identity.
+Subject: teal-gloved hands adjusting the brass nozzle and hose of professional spraying equipment beside a clean residential garden path; only forearms and equipment visible.
+Composition/framing: vertical-leaning crop that also works in a landscape card, strong foreground detail, natural shallow depth of field, clean negative space along one edge.
+Lighting/mood: honest natural daylight, documentary photography, professional and careful rather than dramatic.
+Color palette: forest greens, teal gloves, muted brass and off-white equipment.
+Constraints: generic illustrative scene, no faces, no company branding, no text, no watermark, no insects, no chemical cloud, no unsafe handling, no horror imagery.
