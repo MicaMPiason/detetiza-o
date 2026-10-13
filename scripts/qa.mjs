@@ -81,6 +81,20 @@ for (const profile of profiles) {
   await send("Page.navigate", { url: "http://127.0.0.1:4173/" });
   await wait(700);
 
+  await send("Runtime.evaluate", {
+    awaitPromise: true,
+    expression: `(async () => {
+      const targets = [...document.querySelectorAll('.reveal')];
+      for (const target of targets) {
+        target.scrollIntoView({ block: 'center' });
+        await new Promise((resolve) => setTimeout(resolve, 110));
+      }
+      await new Promise((resolve) => setTimeout(resolve, 800));
+      window.scrollTo(0, 0);
+      await new Promise((resolve) => setTimeout(resolve, 520));
+    })()`
+  });
+
   const audit = await send("Runtime.evaluate", {
     returnByValue: true,
     expression: `(() => ({
@@ -92,6 +106,8 @@ for (const profile of profiles) {
       whatsappLinks: [...document.querySelectorAll('[data-whatsapp]')].map((a) => a.href),
       phoneLinks: [...document.querySelectorAll('[data-phone]')].map((a) => a.href),
       sections: [...document.querySelectorAll('main > section')].map((section) => section.id)
+      ,hiddenReveals: document.querySelectorAll('.reveal:not(.is-visible)').length,
+      hiddenRevealDetails: [...document.querySelectorAll('.reveal:not(.is-visible)')].map((element) => element.className)
     }))()`
   });
 
