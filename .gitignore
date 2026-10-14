@@ -1,6 +1,7 @@
 .vercel/
 .impeccable/review/
 .impeccable/edge-qa-profile/
+.impeccable/edge-qa-profile-sections/
 node_modules/
 .DS_Store
 Thumbs.db

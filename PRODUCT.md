@@ -28,9 +28,10 @@ A página é uma prévia local destinada à validação pela empresa antes de qu
 
 ## Capabilities and Constraints
 
-- Cinco seções de conteúdo: hero, serviços, sobre, avaliações e contato.
+- Oito seções de conteúdo: hero, sobre, serviços, sinais para buscar uma avaliação, como solicitar atendimento, avaliações, dúvidas frequentes e contato.
 - Navegação por âncoras, menu mobile acessível e CTAs centralizados em uma única configuração.
-- Sem backend, formulário, horários, preços, FAQ, galeria, catálogo de pragas ou publicação automática.
+- Sem backend, formulário, horários, preços, galeria, catálogo de pragas ou publicação automática.
+- As novas orientações e dúvidas frequentes encaminham decisões sobre preparo, afastamento, valores e duração à equipe, sem fixar condições comerciais ou instruções de aplicação.
 - Telefone, horários, escopo comercial e URL exata do perfil do Google permanecem pendentes de confirmação.
 
 ## Brand Commitments
