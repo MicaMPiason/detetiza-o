@@ -7,6 +7,9 @@ const edgePath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.
 const reviewDir = new URL("../.impeccable/review/", import.meta.url);
 const browserProfile = fileURLToPath(new URL("../.impeccable/edge-qa-profile-sections/", import.meta.url));
 const profiles = [
+  { name: "wide", width: 1920, height: 1080, mobile: false, heroOnly: true },
+  { name: "ultrawide", width: 2560, height: 1440, mobile: false, heroOnly: true },
+  { name: "user-wide", width: 3822, height: 1918, mobile: false, heroOnly: true },
   { name: "desktop", width: 1440, height: 1000, mobile: false },
   { name: "tablet", width: 800, height: 1000, mobile: false },
   { name: "mobile", width: 360, height: 800, mobile: true },
@@ -118,10 +121,26 @@ for (const profile of profiles) {
       ,brokenAnchors: [...document.querySelectorAll('a[href^="#"]')].filter((a) => a.hash && !document.getElementById(a.hash.slice(1))).map((a) => a.hash),
       overflowingElements: [...document.querySelectorAll('main *, .header-inner *')].filter((element) => { const r = element.getBoundingClientRect(); return r.width && (r.left < -1 || r.right > document.documentElement.clientWidth + 1); }).map((element) => element.className || element.tagName),
       faqCount: document.querySelectorAll('.faq-list details').length
+      ,hero: (() => {
+        const copy = document.querySelector('.hero-copy');
+        const heading = document.querySelector('.hero-copy h1');
+        const button = document.querySelector('.hero-copy .button');
+        const proof = document.querySelector('.hero-proof');
+        const style = getComputedStyle(copy);
+        const r = copy.getBoundingClientRect();
+        return { contentWidth: r.width - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight), headingHeight: heading.getBoundingClientRect().height, buttonInsideViewport: button.getBoundingClientRect().bottom <= innerHeight, proofDoesNotOverlap: button.getBoundingClientRect().bottom <= proof.getBoundingClientRect().top };
+      })()
     }))()`
   });
 
   if (audit.exceptionDetails) throw new Error(JSON.stringify(audit.exceptionDetails));
+
+  const heroCapture = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
+  await writeFile(new URL(`${profile.name}-hero.png`, reviewDir), Buffer.from(heroCapture.data, 'base64'));
+  if (profile.heroOnly) {
+    results.push({ profile: profile.name, ...audit.result.value });
+    continue;
+  }
 
   const metrics = await send("Page.getLayoutMetrics");
   const { width, height } = metrics.cssContentSize;
